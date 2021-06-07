@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true" class="content">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">VidyoPlatform</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-button round outline (click)="close()" class="closeBtn" *ngIf="isActive"
+    >Close</ion-button
+  >
+
+  <ion-button round outline (click)="open()" class="openBtn" *ngIf="!isActive"
+    >Open Conference</ion-button
+  >
+
+  <div class="container" *ngIf="isActive">
+    <ion-list class="list">
+      <ion-button round outline (click)="connect()"
+        >{{ isConnected ? "Disconnect" : "Connect" }}</ion-button
+      >
+      <ion-button round outline (click)="changeCameraPrivacy()"
+        >Camera</ion-button
+      >
+      <ion-button round outline (click)="changeMicPrivacy()">Mic</ion-button>
+      <ion-button round outline (click)="cycleCamera()">Cycle</ion-button>
+    </ion-list>
+
+    <ion-progress-bar
+      type="indeterminate"
+      [hidden]="inProgress == false"
+    ></ion-progress-bar>
+
+    <ion-label class="status">{{ status }}</ion-label>
+  </div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "VidyoPlatformConnector",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

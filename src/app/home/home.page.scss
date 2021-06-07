@@ -1,0 +1,63 @@
+.container {
+  text-align: center;
+
+  background-color: #888888;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  transform: translateY(-150%);
+
+  padding-bottom: 12px;
+}
+
+.list {
+  background-color: transparent;
+}
+
+.content {
+  background-color: transparent;
+  justify-content: center;
+}
+
+ion-content {
+  --background: none;
+}
+
+.closeBtn {
+  position: absolute;
+  right: 16px;
+  top: 24px;
+}
+
+.openBtn {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.status {
+  color: #ffffff;
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
