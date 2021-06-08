@@ -95,4 +95,8 @@ capacitor-cordova-android-plugins
 # Copied web assets
 app/src/main/assets/public
 
-app/libs
+app/libs/arm64-v8a
+app/libs/armeabi-v7a
+app/libs/x86
+app/libs/x86_64
+app/libs/vidyoclient.jar
