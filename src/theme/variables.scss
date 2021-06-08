@@ -1,6 +1,8 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+$content-ios-transition-background: transparent;
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
@@ -153,8 +155,7 @@
    */
 
   .ios body {
-    --ion-background-color: #000000;
-    --ion-background-color-rgb: 0,0,0;
+    --ion-background-color: transparent;
 
     --ion-text-color: #ffffff;
     --ion-text-color-rgb: 255,255,255;

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "VidyoPlatformConnector",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

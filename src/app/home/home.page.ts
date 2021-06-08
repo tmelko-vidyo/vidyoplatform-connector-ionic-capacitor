@@ -2,11 +2,10 @@ import { ChangeDetectorRef, Component } from '@angular/core';
 import { WebPlugin } from '@capacitor/core';
 
 import { Platform } from '@ionic/angular';
-import {
+import VidyoPlatform, {
   ConferenceOptions,
   PrivacyOptions,
-  VidyoPlatform,
-} from '../../../../vidyoplatform-connector-plugin/dist/esm';
+} from '../vidyo-platform-plugin';
 
 const VidyoPluginListener = VidyoPlatform as unknown as WebPlugin;
 
@@ -17,12 +16,13 @@ const VidyoPluginListener = VidyoPlatform as unknown as WebPlugin;
 })
 export class HomePage {
   connectOptions: ConferenceOptions = {
-    portal: 'pls provide your portal',
-    roomKey: 'pls provide your room key',
+    portal: 'test.platform.vidyo.io',
+    roomKey: '8huaP05z6Z',
     pin: '',
     name: 'John Doe',
     maxParticipants: 8,
     logLevel: 'debug@VidyoClient debug@VidyoConnector info warning',
+    debug: false,
   };
 
   isActive = false;
@@ -45,7 +45,7 @@ export class HomePage {
     VidyoPluginListener.addListener('VidyoEventCallback', (info: any) => {
       switch (info.type) {
         case 'init':
-          console.log('Ionic Layer: Initialized: ' + JSON.stringify(info));
+          console.log('Ionic Layer: Initialized: ' + info.status);
           break;
         case 'connected':
           this.isConnected = true;
@@ -57,7 +57,7 @@ export class HomePage {
           this.isConnected = false;
           this.status = 'Disconnected';
 
-          console.log('Ionic Layer: Disconnected: ' + JSON.stringify(info));
+          console.log('Ionic Layer: Disconnected: ' + info.reason);
 
           if (this.isDisconnectBeforeQuit) {
             this.close();
@@ -67,9 +67,7 @@ export class HomePage {
           this.isConnected = false;
           this.status = 'Failed: ' + info.reason;
 
-          console.log(
-            'Ionic Layer: Connection failed: ' + JSON.stringify(info)
-          );
+          console.log('Ionic Layer: Connection failed: ' + info.reason);
           break;
 
         case 'participant':
