@@ -16,8 +16,8 @@ const VidyoPluginListener = VidyoPlatform as unknown as WebPlugin;
 })
 export class HomePage {
   connectOptions: ConferenceOptions = {
-    portal: 'test.platform.vidyo.io',
-    roomKey: '8huaP05z6Z',
+    portal: '*.platform.vidyo.io',
+    roomKey: 'your-room-key',
     pin: '',
     name: 'John Doe',
     maxParticipants: 8,
