@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19DB750429DD9D0800887C59 /* VidyoClientIOS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DB750329DD9D0800887C59 /* VidyoClientIOS.xcframework */; };
+		19DB750829DD9E4600887C59 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DB750729DD9E4600887C59 /* Photos.framework */; };
 		19DF2106266FC88D00C76AF6 /* VidyoPlatformPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF2105266FC88C00C76AF6 /* VidyoPlatformPlugin.swift */; };
 		19DF2108266FC8F300C76AF6 /* VidyoClientWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DF2107266FC8F300C76AF6 /* VidyoClientWrapper.swift */; };
 		19DF210B266FCA4800C76AF6 /* VidyoPlatfromPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 19DF210A266FCA4800C76AF6 /* VidyoPlatfromPlugin.m */; };
-		19DF210D266FCAB600C76AF6 /* VidyoClientIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DF210C266FCAB600C76AF6 /* VidyoClientIOS.framework */; };
-		19DF210E266FCAB600C76AF6 /* VidyoClientIOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19DF210C266FCAB600C76AF6 /* VidyoClientIOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		19DF2111266FCAC500C76AF6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DF2110266FCAC500C76AF6 /* AudioToolbox.framework */; };
 		19DF2113266FCACE00C76AF6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DF2112266FCACE00C76AF6 /* AVFoundation.framework */; };
 		19DF2115266FCAD600C76AF6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DF2114266FCAD500C76AF6 /* CoreLocation.framework */; };
@@ -28,21 +28,9 @@
 		A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		19DF210F266FCAB600C76AF6 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				19DF210E266FCAB600C76AF6 /* VidyoClientIOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		19DB750329DD9D0800887C59 /* VidyoClientIOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = VidyoClientIOS.xcframework; sourceTree = "<group>"; };
+		19DB750729DD9E4600887C59 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		19DF2105266FC88C00C76AF6 /* VidyoPlatformPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidyoPlatformPlugin.swift; sourceTree = "<group>"; };
 		19DF2107266FC8F300C76AF6 /* VidyoClientWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidyoClientWrapper.swift; sourceTree = "<group>"; };
 		19DF2109266FCA4800C76AF6 /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -74,11 +62,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				19DF2117266FCADD00C76AF6 /* CoreMedia.framework in Frameworks */,
+				19DB750829DD9E4600887C59 /* Photos.framework in Frameworks */,
 				19DF2119266FCAE700C76AF6 /* SystemConfiguration.framework in Frameworks */,
 				19DF2113266FCACE00C76AF6 /* AVFoundation.framework in Frameworks */,
 				19DF2115266FCAD600C76AF6 /* CoreLocation.framework in Frameworks */,
 				A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */,
-				19DF210D266FCAB600C76AF6 /* VidyoClientIOS.framework in Frameworks */,
+				19DB750429DD9D0800887C59 /* VidyoClientIOS.xcframework in Frameworks */,
 				19DF2111266FCAC500C76AF6 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +78,8 @@
 		27E2DDA53C4D2A4D1A88CE4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				19DB750729DD9E4600887C59 /* Photos.framework */,
+				19DB750329DD9D0800887C59 /* VidyoClientIOS.xcframework */,
 				19DF2118266FCAE600C76AF6 /* SystemConfiguration.framework */,
 				19DF2116266FCADD00C76AF6 /* CoreMedia.framework */,
 				19DF2114266FCAD500C76AF6 /* CoreLocation.framework */,
@@ -159,7 +150,6 @@
 				504EC3011FED79650016851F /* Frameworks */,
 				504EC3021FED79650016851F /* Resources */,
 				9592DBEFFC6D2A0C8D5DEB22 /* [CP] Embed Pods Frameworks */,
-				19DF210F266FCAB600C76AF6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -395,7 +385,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -404,6 +395,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FC68EB0AF532CFC21C3344DD /* Pods-App.debug.xcconfig */;
 			buildSettings = {
+				"ARCHS[sdk=iphoneos*]" = arm64;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -421,9 +414,32 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/CapacitorKeyboard/CapacitorKeyboard.framework/Headers\"",
 					"$(PROJECT_DIR)",
 				);
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Capacitor/Capacitor.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CapacitorApp/CapacitorApp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CapacitorCordova/Cordova.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CapacitorHaptics/CapacitorHaptics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CapacitorKeyboard/CapacitorKeyboard.framework/Headers\"",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/VidyoClientIOS.xcframework/ios-arm64/VidyoClientIOS.framework/Headers",
+				);
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Capacitor/Capacitor.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CapacitorApp/CapacitorApp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CapacitorCordova/Cordova.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CapacitorHaptics/CapacitorHaptics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CapacitorKeyboard/CapacitorKeyboard.framework/Headers\"",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/VidyoClientIOS.xcframework/ios-x86_64-simulator/VidyoClientIOS.framework/Headers",
+				);
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
 				PRODUCT_BUNDLE_IDENTIFIER = io.ionic.starter.capacitor.team;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,7 +474,10 @@
 				);
 				INFOPLIST_FILE = App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.ionic.starter.capacitor.team;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
