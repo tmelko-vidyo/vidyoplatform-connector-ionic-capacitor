@@ -6,7 +6,7 @@
 
 ### Add VidyoClient SDK
 
-1. Download and unzip Android & iOS https://developer.vidyo.io/#/packages
+1. Download and unzip 22.6.1.14 SDK Version: [Android](https://static.vidyo.io/22.6.1.14/package/VidyoClient-AndroidSDK.zip) & [iOS](https://static.vidyo.io/22.6.1.14/package/VidyoClient-iOSSDK.zip)
 2. Copy /VidyoClient-AndroidSDK/lib/android content to /vidyoplatform-connector-ionic-capacitor/android/app/lib/
 3. Copy /VidyoClient-iOSSDK/lib/ios/VidyoClientIOS.framework to /vidyoplatform-ionic-capacitor/ios/App/
 
